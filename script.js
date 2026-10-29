@@ -310,20 +310,20 @@ document.head.appendChild(kieuTraiTim);
 
 // Change these paths to match your actual image files.
 const danhSachAnhTraiTim = [
-    "images/anh1.jpg",
-    "images/anh2.jpg",
-    "images/anh3.jpg",
-    "images/anh4.jpg",
-    "images/anh5.jpg",
-    "images/anh6.jpg",
-    "images/anh7.jpg",
-    "images/anh8.jpg",
-    "images/anh9.jpg",
-    "images/anh10.jpg",
-    "images/anh11.jpg",
-    "images/anh12.jpg",
-    "images/anh13.jpg",
-    "images/anh14.jpg"
+    "anh1.jpg",
+    "anh2.jpg",
+    "anh3.jpg",
+    "anh4.jpg",
+    "anh5.jpg",
+    "anh6.jpg",
+    "anh7.jpg",
+    "anh8.jpg",
+    "anh9.jpg",
+    "anh10.jpg",
+    "anh11.jpg",
+    "anh12.jpg",
+    "anh13.jpg",
+    "anh14.jpg"
 ];
 
 // Create a heart-shaped photo.
