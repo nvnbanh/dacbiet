@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>Hỡi công chúa của anh 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-hearts" aria-hidden="true"></div>
+
+  <!-- PASSWORD SCREEN -->
+  <section id="password-screen" class="screen active">
+    <div class="card password-card">
+      <div class="big-emoji">🔐</div>
+      <p class="eyebrow">Hỡi công chúa của anh</p>
+      <h1>Món quà này đặc biệt dành riêng cho em 💗</h1>
+      <p class="subtitle">Nhập mật khẩu để mở món quà bí mật nhé!</p>
+
+      <form id="password-form">
+        <input id="password-input" type="password"
+          placeholder="Nhập mật khẩu" autocomplete="off"
+          aria-label="Mật khẩu" required>
+        <button class="button" type="submit">Mở món quà ✨</button>
+      </form>
+
+      <p id="password-error" class="error" aria-live="polite"></p>
+      <p class="hint">Một món quà nhỏ đang chờ công chúa.</p>
+    </div>
+  </section>
+
+  <!-- BIRTHDAY CONTENT -->
+  <main id="birthday-content" class="hidden">
+
+    <!-- HOME -->
+    <section id="home" class="screen active">
+      <div class="card hero-card">
+        <p class="eyebrow">Một ngày thật đặc biệt</p>
+        <div class="big-emoji cake">🎂</div>
+        <h1>Happy Birthday<br>
+          <span>Công Chúa Của Anh</span>
+        </h1>
+        <p class="subtitle">
+          Hôm nay là ngày đặc biệt, vì thế giới đã có một người
+          đáng yêu như em. 💗
+        </p>
+        <button class="button" data-go="letter">
+          Bước vào món quà 💌
+        </button>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section id="letter" class="screen">
+      <div class="card letter-card">
+        <div class="big-emoji">💌</div>
+        <h2>Gửi em yêu</h2>
+
+        <div class="message">
+
+        <div class="message">
+    <h2>🎂 Chúc mừng sinh nhật công chúa 🎂</h2>
+    <p id="loiChuc">
+        Chúc mừng sinh nhật cô gái đặc biệt nhất hôm nay!
+        Chúc em tuổi mới luôn xinh tươi, vui vẻ, bình an và hạnh phúc.
+        Chúc em luôn gặp may mắn, học tập thật tốt,
+        đạt được những mục tiêu mà mình mong muốn
+        và có thật nhiều trải nghiệm đáng nhớ.
+        Mong tuổi mới sẽ mang đến cho em những người bạn chân thành,
+        những niềm vui bất ngờ và những ngày tháng thật đáng yêu.
+        Khi mệt mỏi, mong em luôn có thời gian nghỉ ngơi;
+        khi buồn, mong em sẽ sớm tìm lại nụ cười;
+        khi gặp khó khăn, mong em đủ kiên trì để bước tiếp.
+        Cảm ơn em vì đã xuất hiện và khiến thế giới này
+        trở nên đặc biệt hơn theo cách riêng của em.
+        Hãy luôn là chính mình, luôn tự tin,
+        luôn trân trọng bản thân và nhớ rằng em xứng đáng
+        với những điều tử tế nhất.
+        Chúc mọi điều ước của em đều thành hiện thực.
+        Chúc công chúa có một sinh nhật thật đáng nhớ
+        và một tuổi mới ngập tràn yêu thương! ❤️
+    </p>
+</div>
+        </div>
+
+        <button class="button" data-go="memories">
+          Xem kho lưu trữ 💞
+        </button>
+        <button class="button secondary" data-go="home">
+          Quay lại
+        </button>
+      </div>
+    </section>
+
+    <!-- MEMORY ARCHIVE -->
+    <section id="memories" class="screen">
+      <div class="card archive-card">
+        <p class="eyebrow">OUR LITTLE UNIVERSE</p>
+        <h2>Kho lưu trữ kỷ niệm 💗</h2>
+        <p class="subtitle">
+          Những khoảnh khắc nhỏ, những điều muốn giữ thật lâu.
+        </p>
+
+        <div class="love-banner" aria-label="I love you">
+          <div class="love-track">
+            <span>I LOVE YOU ♥ I LOVE YOU ♥ I LOVE YOU ♥</span>
+            <span aria-hidden="true">I LOVE YOU ♥ I LOVE YOU ♥ I LOVE YOU ♥</span>
+          </div>
+        </div>
+
+        <div class="gallery-tools">
+          <button class="tool-button" id="zoom-out" type="button"
+            aria-label="Thu nhỏ ảnh">− Thu nhỏ</button>
+          <button class="tool-button" id="zoom-in" type="button"
+            aria-label="Phóng to ảnh">＋ Phóng to</button>
+          <button class="tool-button" id="reset-photos" type="button">
+            Sắp xếp lại ảnh ↺
+          </button>
+        </div>
+
+        <p class="gallery-hint">
+          Chọn ảnh rồi kéo để di chuyển. Dùng nút phóng to/thu nhỏ
+          hoặc lăn con lăn chuột trên ảnh. Bấm vào ghi chú để sửa.
+        </p>
+
+        <div id="photo-stage" class="photo-stage">
+
+          <!--
+            Thay ảnh bằng cách đổi đường dẫn images/anh1.jpg...
+            Bấm vào dòng ghi chú để sửa nội dung.
+          -->
+
+          <figure class="photo" data-index="1">
+            <img src="images/anh1.jpg" alt="Kỷ niệm 1" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">sinh nhật vui vẻ 💗</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="2">
+            <img src="images/anh2.jpg" alt="Kỷ niệm 2" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Một ngày thật vui 🌷</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="3">
+            <img src="images/anh3.jpg" alt="Kỷ niệm 3" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Nụ cười của em 💕</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="4">
+            <img src="images/anh4.jpg" alt="Kỷ niệm 4" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Khoảnh khắc đáng nhớ ✨</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="5">
+            <img src="images/anh5.jpg" alt="Kỷ niệm 5" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Một chút dịu dàng 🌸</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="6">
+            <img src="images/anh6.jpg" alt="Kỷ niệm 6" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Ngày đặc biệt 💌</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="7">
+            <img src="images/anh7.jpg" alt="Kỷ niệm 7" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">bà chã hơm💖</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="8">
+            <img src="images/anh8.jpg" alt="Kỷ niệm 8" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Điều anh trân trọng 🌹</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="9">
+            <img src="images/anh9.jpg" alt="Kỷ niệm 9" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Một ngày bình yên ☁️</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="10">
+            <img src="images/anh10.jpg" alt="Kỷ niệm 10" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Chỉ cần em vui 🩷</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="11">
+            <img src="images/anh11.jpg" alt="Kỷ niệm 11" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Một điều nhỏ bé 🌼</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="12">
+            <img src="images/anh12.jpg" alt="Kỷ niệm 12" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Giữ lại khoảnh khắc này 💗</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="13">
+            <img src="images/anh13.jpg" alt="Kỷ niệm 13" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">Một phần ký ức đẹp 🌙</figcaption>
+          </figure>
+
+          <figure class="photo" data-index="14">
+            <img src="images/anh14.jpg" alt="Kỷ niệm 14" draggable="false">
+            <figcaption contenteditable="true" spellcheck="false">I love you ❤️</figcaption>
+          </figure>
+
+          <div class="floating-love love-one" aria-hidden="true">I LOVE YOU ♥</div>
+          <div class="floating-love love-two" aria-hidden="true">LOVE YOU ♡</div>
+          <div class="floating-heart heart-one" aria-hidden="true">💗</div>
+          <div class="floating-heart heart-two" aria-hidden="true">💕</div>
+          <div class="floating-heart heart-three" aria-hidden="true">♡</div>
+        </div>
+
+        <div class="love-banner bottom-banner" aria-label="I love you">
+          <div class="love-track reverse">
+            <span>YOU ARE MY FAVORITE PERSON ♥ I LOVE YOU ♥</span>
+            <span aria-hidden="true">YOU ARE MY FAVORITE PERSON ♥ I LOVE YOU ♥</span>
+          </div>
+        </div>
+
+        <p class="signature">Dành riêng cho công chúa của anh 💖</p>
+
+        <button class="button" data-go="wish">
+          Đến lời chúc cuối cùng 🎁
+        </button>
+        <button class="button secondary" data-go="letter">
+          Quay lại lá thư
+        </button>
+      </div>
+    </section>
+
+    <!-- FINAL WISH -->
+    <section id="wish" class="screen">
+      <div class="card">
+        
+<div class="big-emoji">🎁</div>
+<h2>Mong ước dành cho em</h2>
+
+<div class="message">
+
+    <p id="mongUoc">
+        Anh mong rằng cô công chúa nhỏ của anh sẽ luôn vui vẻ,
+        luôn mỉm cười thật nhiều và gặp được những điều tốt đẹp nhất.
+        Mong em sẽ luôn mạnh mẽ để vượt qua những ngày không vui,
+        luôn có đủ dũng khí để theo đuổi ước mơ của mình và không bao giờ
+        quên rằng bản thân em xứng đáng với tất cả những điều tuyệt vời.
+        Anh mong mỗi ngày của em đều có thật nhiều niềm vui,
+        có những người chân thành ở bên cạnh, có những khoảnh khắc đáng nhớ
+        và có thật nhiều lý do để mỉm cười.
+        Mong mọi điều em ấp ủ đều dần trở thành hiện thực,
+        mong những giọt nước mắt sẽ ít đi và những nụ cười sẽ nhiều hơn.
+        Dù cuộc sống có đôi lúc không như mong đợi,
+        anh vẫn mong em luôn giữ được trái tim ấm áp,
+        sự đáng yêu và niềm tin vào những điều tốt đẹp phía trước.
+        Mong em luôn hạnh phúc, bình an và được yêu thương thật nhiều.
+    </p>
+</div>
+
+<p class="signature">YÊU EM 💖</p>
+<button class="button" id="celebrate-button">
+    <div id="heart-photo-container"></div>
+  Gửi em ngàn trái tim 💗
+</button>
+<button class="button secondary" data-go="memories">
+  Xem lại kho lưu trữ 📸
+</button>
+<button class="button secondary" data-go="home">
+  Xem lại từ đầu ↺
+</button>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
